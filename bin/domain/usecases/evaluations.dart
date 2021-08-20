@@ -1,6 +1,9 @@
 class Evaluations {
   static final _numbersExpresion = RegExp(r'[0-9]');
 
+  /// This evaluation seeks to identify if the value entered
+  /// by parameter is NOT a Null type and also if the data
+  /// type corresponds to a non-empty String
   static bool isValidString(dynamic value) {
     return value is String && value.isNotEmpty;
   }

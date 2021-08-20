@@ -4,7 +4,13 @@ import '../adapters/validation_error.dart';
 import 'alert.dart';
 import 'evaluations.dart';
 
+/// This class contains the necessary methods to feed information
+///  to other services that by means of data return will
+/// facilitate the responses to the user
 class Palindrome {
+  /// This method has the task of leading the procedural
+  /// issues necessary to notify the user regarding whether
+  /// his entered word is a palindrome
   void evaluate() {
     try {
       stdout.write('Enter the text to evaluate if it is a palindrome: ');
